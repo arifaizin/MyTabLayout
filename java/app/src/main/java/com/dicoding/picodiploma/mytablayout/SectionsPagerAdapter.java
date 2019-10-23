@@ -23,6 +23,21 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+//    @Override
+//    public Fragment getItem(int position) {
+//        Fragment fragment = null;
+//        switch (position) {
+//            case 0:
+//                fragment = new HomeFragment();
+//                break;
+//
+//            case 1:
+//                fragment = new ProfileFragment();
+//                break;
+//        }
+//        return fragment;
+//    }
+
     @Override
     public Fragment getItem(int position) {
         Fragment fragment = HomeFragment.newInstance(position + 1);
@@ -40,3 +55,4 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         return 3;
     }
 }
+
